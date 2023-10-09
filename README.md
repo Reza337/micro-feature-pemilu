@@ -133,7 +133,7 @@
 
 **Find All Party**
 
-- URL : http://localhost:5000/api/v1/parties
+- URL : http://localhost:5000/api/v1/partais
 
 - Method: GET
 
