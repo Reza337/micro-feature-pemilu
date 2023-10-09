@@ -33,7 +33,7 @@ export default new (class VoteService {
 				selected: data.pemiluID,
 			});
 
-			this.VoteRepository.save(obj);
+			await this.VoteRepository.save(obj);
 			return res.status(200).json({ message: "Success", data: { obj } });
 		} catch (error) {
 			return res
