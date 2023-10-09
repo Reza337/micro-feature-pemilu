@@ -54,7 +54,7 @@ export default new (class PemiluService {
 				image: result.secure_url,
 			});
 
-			this.PemiluRepository.save(obj);
+			await this.PemiluRepository.save(obj);
 			return res.status(200).json(obj);
 		} catch (error) {
 			return res
